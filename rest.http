@@ -1,0 +1,39 @@
+###
+GET http://localhost:3000
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImV4YW1wbGV1c2VyMUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IjEyMzIxNDMyMTEiLCJpYXQiOjE2OTkxMTY0MjEsImV4cCI6MTY5OTExNjQzNiwiYXVkIjoiNjU0NjMwMGFiMTczNzg3OGMzNWRmNDdjIiwiaXNzIjoieW91cndlYnNpdGUuY29tIn0.p84fDG_qszeAYB05qf9R5HMaIK4Q8_0dwytm23VMiNE
+
+
+###Login route
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email": "exampleuser4@gmail.com",
+    "password": "1232143244"
+}
+
+
+###register route
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "email": "exampleuser4@gmail.com",
+    "password": "1232143244"
+}
+
+###refresh-token route
+POST http://localhost:3000/auth/refresh-token
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2OTkxMTYzOTAsImV4cCI6MTczMDY3Mzk5MCwiYXVkIjoiNjU0NjMwMGFiMTczNzg3OGMzNWRmNDdjIiwiaXNzIjoieW91cndlYnNpdGUuY29tIn0.VyCyO5bbt9V3MNHrKdLDw8rI8-LAenQqchb2RJy3H3A"
+}
+
+###logout route
+DELETE  http://localhost:3000/auth/logout
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2OTkzNjI0NDgsImV4cCI6MTczMDkyMDA0OCwiYXVkIjoiNjU0NjMwMGFiMTczNzg3OGMzNWRmNDdjIiwiaXNzIjoieW91cndlYnNpdGUuY29tIn0.piBIKlTazXgncx7q8KkXGACOJXFi-P1kHCieYcTmbHs"
+}
